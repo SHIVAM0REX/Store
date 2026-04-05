@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rupiyo Landing</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+body{
+  background:url('https://i.ibb.co/PGwBVxz1/fa11e43bf80fa6dec04f479ca6916292-avf-1.webp') no-repeat center/cover;
+  min-height:100vh;
+  color:#fff;
+  position:relative;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.35);
+  pointer-events:none;
+}
+.container{max-width:900px;margin:auto;text-align:center;padding:20px;position:relative;z-index:2}
+
+.logo{width:60px;max-width:60px;height:auto;cursor:pointer;transition:.3s;}
+.logo:hover{transform:scale(1.05);}
+
+.marquee{
+  background:linear-gradient(45deg,#ff9800,#ffeb3b);
+  color:#000;
+  padding:10px 12px;
+  text-align:center;
+  border-radius:15px;
+  font-weight:500;
+  font-size:14px;
+  font-family:'Courier Prime', monospace;
+  letter-spacing:0.5px;
+  box-shadow:0 0 15px rgba(255,200,0,0.5);
+  margin-top:10px;
+}
+
+.marquee span{
+  display:inline-block;
+  animation:pop 1.2s ease infinite alternate;
+}
+
+@keyframes pop{
+  0%{transform:scale(1);}
+  100%{transform:scale(1.03);}
+}
+
+/* CARD */
+.card{
+  margin:30px auto;padding:15px;border-radius:20px;
+  background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,0.3);width:80%;
+  cursor:pointer;transition:.3s
+}
+.card:hover{transform:scale(1.03)}
+.card img{
+  width:100%;
+  border-radius:15px;
+  cursor:pointer;
+  transition:.3s;
+}
+.card img:hover{transform:scale(1.03)}
+
+/* 🔥 WARNING TEXT ANIMATION */
+.warning{
+  margin-top:10px;
+  font-weight:bold;
+  font-size:15px;
+  color:#ff4d4d;
+  animation:blink 1s infinite;
+}
+
+@keyframes blink{
+  0%,100%{opacity:1;}
+  50%{opacity:0.3;}
+}
+
+/* BUTTON */
+.btn{
+  display:block;
+  margin:25px auto;
+  padding:16px;
+  width:80%;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(45deg,#ffeb3b,#ff9800);
+  color:#000;
+  font-weight:bold;
+  font-size:16px;
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
+  animation:pulse 1.5s infinite;
+  box-shadow:0 0 15px rgba(255,200,0,0.8);
+}
+.btn:hover{transform:scale(1.05)}
+
+.btn::after{
+  content:"✨";
+  position:absolute;
+  right:12px;
+  top:8px;
+  font-size:18px;
+}
+
+@keyframes pulse{
+  0%{box-shadow:0 0 10px rgba(255,200,0,0.6);}
+  50%{box-shadow:0 0 25px rgba(255,200,0,1);}
+  100%{box-shadow:0 0 10px rgba(255,200,0,0.6);}
+}
+
+.small{font-size:12px;opacity:.9;margin-top:10px;text-align:center;}
+
+.small a{
+  color:#ffeb3b;
+  text-decoration:none;
+  margin:0 8px;
+  font-weight:bold;
+}
+.small a:hover{
+  text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="https://i.ibb.co/bwvSbKR/20260403-144948.webp" class="logo">
+
+<div class="marquee">
+<span>𝙎𝙠𝙞𝙡𝙡 𝙨𝙖𝙢𝙚 𝙝𝙖𝙞. 𝙛𝙖𝙧𝙦 𝙗𝙖𝙨 𝙜𝙧𝙞𝙥 𝙠𝙖 𝙝𝙖𝙞.</span>
+</div>
+
+<h2 style="text-align:left;margin-top:20px;font-size:18px;">
+E-SPORTS REQUIRED 🎮
+</h2>
+
+<div class="card">
+  <img src="https://i.ibb.co/nsGtT1FJ/file-00000000b7b47208b86c5c24d7f260ac.png"
+       onclick="window.open('https://bitli.in/imui032','_blank')">
+</div>
+
+<!-- ✅ IMAGE KE NICHE WARNING -->
+<div class="warning">😱 Don’t be the noob who missed the drop.</div>
+
+<p>Limited stock available. Order before it’s gone.</p>
+
+<b>Most people scroll… smart ones buy first.</b>
+
+<button class="btn" onclick="window.open('https://bitli.in/imui032','_blank')">
+BUY NOW
+</button>
+
+<!-- ✅ SINGLE LINE COPYRIGHT + LINKS -->
+<div class="small">
+© JD's Store — All rights reserved.
+<br>
+<a href="https://shivam0rex.github.io/Disclaimer/" target="_blank">Disclaimer</a> | 
+<a href="https://shivam0rex.github.io/Privacy-policy/" target="_blank">Privacy Policy</a>
+</div>
+
+</div>
+
+</body>
+</html>
